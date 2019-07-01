@@ -6,4 +6,4 @@
 
 ### Test
 
-    ccl -e "(ql:quickload :levenshtein)" -e "(asdf:test-system :levenshtein)" -e "(quit)"
+    sbcl --non-interactive --eval "(ql:quickload :levenshtein/tests)" --eval "(asdf:test-system :levenshtein)"
